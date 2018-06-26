@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/user_order_recycler"
+        android:layout_marginLeft="15dp"
+        android:clipToPadding="false"
+        android:layout_marginRight="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:src="@drawable/rect_blue_bg"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:fontFamily="@font/nunitobold"
+        android:layout_marginTop="11dp"
+        android:layout_marginStart="10dp"
+        android:textSize="25sp"
+        android:text="Bahteralicious"/>
+
+    <mehdi.sakout.fancybuttons.FancyButton
+        android:id="@+id/close_order_btn"
+        android:layout_width="72dp"
+        android:layout_below="@id/name"
+        android:layout_height="30dp"
+        android:layout_marginTop="18dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="10dp"
+        fancy:fb_defaultColor="#FFFFFF"
+        fancy:fb_focusColor="#B7B7B7"
+        fancy:fb_radius="7dp"
+        android:paddingBottom="1dp"
+        fancy:fb_text="Close order"
+        fancy:fb_textColor="#47D4AE"
+        fancy:fb_textFont="@font/nunitobold"
+        fancy:fb_textSize="12sp" />
+
+</RelativeLayout>

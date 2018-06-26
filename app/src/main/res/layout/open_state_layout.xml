@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <android.support.v7.widget.RecyclerView
+        android:paddingTop="55dp"
+        android:id="@+id/user_order_recycler"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="25dp"
+            android:src="@drawable/open_logo" />
+
+        <TextView
+            android:id="@+id/main_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/logo"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/nunitobold"
+            android:text="Your order is currently opened"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/supporting_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/main_text"
+            android:textColor="#AAAAAA"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/nunitobold"
+            android:text="Waiting for the first customer..."
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:src="@drawable/rect_blue_bg" />
+
+    <mehdi.sakout.fancybuttons.FancyButton
+        android:id="@+id/close_order_btn"
+        android:visibility="gone"
+        android:layout_width="89dp"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="17dp"
+        android:paddingBottom="1dp"
+        fancy:fb_defaultColor="#FFFFFF"
+        fancy:fb_focusColor="#B7B7B7"
+        fancy:fb_radius="5dp"
+        fancy:fb_text="Close order"
+        fancy:fb_textColor="#47D4AE"
+        fancy:fb_textFont="@font/nunitobold"
+        fancy:fb_textSize="12sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="11dp"
+        android:fontFamily="@font/nunitobold"
+        android:text="Bahteralicious"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp" />
+
+</RelativeLayout>
